@@ -1,6 +1,15 @@
-This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
+## Introduction Note Esketit
+Hi! This project is meant for me and my peers to gain exposure in app development with react native. If you are added to this project by me (Ernie) or other collaborators please follow these general guidelines to remain a clean workflow and proper code review:
+* Always start a new branch for fixes or feature adds and delete your branches after merge
+* Branch names should be in the following format: initials_whatWasWorkedOn
+Keep it short and concise.
+* Try and keep your commits limited to one and if you have multiple either use the `git commit --amend` command to force amendments on an existing commit or use the `squash` command to squash all your commits into one
+* Commit messages are limited to one title line. Short and concise. If description is required also keep in mind the length.
+* Before merging your branch please have atleast two approvals from other collaborators to minimize conflicts and allow for constructive feedback
+* Updates will be posted accordingly on this `README` file on the app for all
 
-Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
+Below you find the general set up for the react native app brought from their site.
+Good looks!
 
 ## Table of Contents
 
@@ -26,6 +35,10 @@ Below you'll find information about performing common tasks. The most recent ver
   * [Networking](#networking)
   * [iOS Simulator won't open](#ios-simulator-wont-open)
   * [QR Code does not scan](#qr-code-does-not-scan)
+
+This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
+
+Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
 
 ## Updating to New Releases
 
@@ -218,3 +231,4 @@ There are a few steps you may want to take to troubleshoot these kinds of errors
 If you're not able to scan the QR code, make sure your phone's camera is focusing correctly, and also make sure that the contrast on the two colors in your terminal is high enough. For example, WebStorm's default themes may [not have enough contrast](https://github.com/react-community/create-react-native-app/issues/49) for terminal QR codes to be scannable with the system barcode scanners that the Expo app uses.
 
 If this causes problems for you, you may want to try changing your terminal's color theme to have more contrast, or running Create React Native App from a different terminal. You can also manually enter the URL printed by the packager script in the Expo app's search bar to load it manually.
+
