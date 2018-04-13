@@ -9,14 +9,12 @@ export default class App extends React.Component {
       <View style={styles.imgContainer}>
         <Image style={styles.image} source={{uri: 'http://www.reactnativeexpress.com/logo.png'}}/>
       </View>
-        
       <View style={styles.textContainer}>
         <Text style={styles.text}> Hello World</Text>
         <Text style={styles.text}> ma name ernie</Text>
         <Text style={styles.text}> shakkabrah!</Text>
         <View style={styles.box}/>
       </View>
-     
       </ScrollView>
     );
   }
