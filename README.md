@@ -1,4 +1,4 @@
-### Introduction Note Esketit
+## Introduction Note Esketit
 Hi! This project is meant for me and my peers to gain exposure in app development with react native. If you are added to this project by me (Ernie) or other collaborators please follow these general guidelines to remain a clean workflow and proper code review:
 * Always start a new branch for fixes or feature adds and delete your branches after merge
 * Branch names should be in the following format: initials_whatWasWorkedOn
@@ -10,10 +10,6 @@ Keep it short and concise.
 
 Below you find the general set up for the react native app brought from their site.
 Good looks!
-
-This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
-
-Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
 
 ## Table of Contents
 
@@ -39,6 +35,10 @@ Below you'll find information about performing common tasks. The most recent ver
   * [Networking](#networking)
   * [iOS Simulator won't open](#ios-simulator-wont-open)
   * [QR Code does not scan](#qr-code-does-not-scan)
+
+This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
+
+Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
 
 ## Updating to New Releases
 
