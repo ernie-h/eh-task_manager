@@ -3,23 +3,19 @@ import styled from 'styled-components';
 
 const Header = styled.Text`
   padding: 10px;
-  color: palevioletred;
-  background: papayawhip;
+  color: #355C7D;
+  backgroundColor: #F8B195;
   fontSize: 30px;
-
 `;
 
 const HeaderWrapper = styled.View`
-  padding-top: 50px;
-  height: 100%;
-  width: 100%;
-
+  padding: 50px 0 20px 0;
   alignItems: center;
 `;
 
 const HeaderLayout = () => (
   <HeaderWrapper>
-    <Header> Ernie's Task Manager </Header>
+    <Header> Nicole's Task Manager </Header>
   </HeaderWrapper>
 );
 
