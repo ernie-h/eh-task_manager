@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import TaskListLayout from '../Lists/TaskListLayout';
 
 const AddTask = styled.TextInput`
+  borderRadius: 5px;
   padding: 10px;
   color: #f8b195;
   background: #c06c84;
@@ -14,44 +15,54 @@ const AddTask = styled.TextInput`
 `;
 
 const AddTaskWrapper = styled.View`
-  padding-top: 10px;
+  padding-top: 20px;
   marginLeft: 40px;
   alignItems: flex-start;
+`;
+
+const TaskListWrapper = styled.View`
+  paddingTop: 13px;
+  marginRight: 50px;
+  width: 200px;
 `;
 
 class AddTaskLayout extends Component {
   constructor(props) {
     super(props);
-    this.state = { task: '' };
+    this.state = {
+      task: '',
+      tasks: []
+    };
   }
 
-  update() {
-    this.props.tasks.push(this.state.task);
+  onSubmitEditing() {
+    this.state.tasks.push(this.state.task);
     this.setState({ task: '' });
+  }
+
+  deleteItem = (item, tasks) => {
+    tasks.filter(f => f === item);
+    this.setState({ tasks });
   }
 
   render() {
     return (
       <AddTaskWrapper>
         <AddTask
-          placeholder="Add task..."
+          placeholder="Add clutt..."
           value={this.state.task}
           onChangeText={(task) => this.setState({ task })}
-          onSubmitEditing={() => this.update()}
+          onSubmitEditing={() => this.onSubmitEditing()}
         />
-        <TaskListLayout
-          tasks={this.props.tasks}
-        />
+        <TaskListWrapper>
+          <TaskListLayout
+            tasks={this.state.tasks}
+            deleteItem={this.deleteItem}
+          />
+        </TaskListWrapper>
       </AddTaskWrapper>);
   }
 }
 
-AddTaskLayout.propTypes = {
-  tasks: PropTypes.array,
-};
-
-AddTaskLayout.defaultProps = {
-  tasks: []
-};
 
 export default AddTaskLayout;

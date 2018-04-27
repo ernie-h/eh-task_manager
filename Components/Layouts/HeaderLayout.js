@@ -2,12 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Header = styled.Text`
-  padding: 10px;
   color: #355C7D;
   fontSize: 40px;
+  height: 70px;
 `;
 
 const HeaderWrapper = styled.View`
+  borderBottomEndRadius: 10px;
+  borderBottomStartRadius: 10px;
   padding-top: 50px;
   alignItems: center;
   backgroundColor: #F8B195;
@@ -16,7 +18,7 @@ const HeaderWrapper = styled.View`
 
 const HeaderLayout = () => (
   <HeaderWrapper>
-    <Header> Task Manager </Header>
+    <Header> clutter </Header>
   </HeaderWrapper>
 );
 
